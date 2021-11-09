@@ -1,0 +1,2 @@
+# Aprendizados da Semana
+Essa semana eu aprendi muita coisa nova, aprendi sobre **Linus Torvalds** e iniciei meu aprendizado em Git, aprendendo comandos de **console e do próprio git** como: cd, mkdir, touch, head, tail, git status, git branch (aprendi também o que são branchs (: ). 
