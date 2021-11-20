@@ -68,6 +68,6 @@ desafioUmB(1,2)
 //Desafio 2
 const desafioDois = (c1, c2) => {
    let h = ((c1*c1)+(c2*c2))
-   console.log(Math.sqrt(h))
+   return console.log(Math.sqrt(h))
 } 
 desafioDois(3,4)
