@@ -49,10 +49,62 @@ const exercicio2 = () =>{
         }console.log(novoArray)
     }
     const letraD = () =>{
+        novoArray= ["1","2","3","4","5","6","7","8","9","10"]
+        for(let i = 0; i<novoArray.length; i++ ){
+            console.log(`O elemento do index ${i} é ${novoArray[i]}`)            
+        }
+
 
     }
+    const letraE = () =>{
+        let menorNumero = 100
+        let maiorNumero = 0
+        for(let numero1 of arrayOriginal){
+            if(numero1<menorNumero){
+                menorNumero=numero1
+            }
+        for(let numero2 of arrayOriginal){
+            if(numero1>maiorNumero){
+                maiorNumero=numero2
+                }
+            }
+        }console.log(`Maior número ${maiorNumero}, Menor número ${menorNumero}`)
+    }
     //executar aqui
-    
-    
 }
-exercicio2()
+const desafio1 = () =>{
+    const number1 = Number(prompt('Olá pessoa1, digite um número'))
+    let number2 = Number(prompt('Olá pessoa2, advinhe o número que a pessoa 1 escolheu'))
+    let tentativa  = 0
+    while(number1!==number2){
+        if(number1>number2){
+        tentativa = tentativa+1
+        number2 = Number(prompt('ERROU, É MAIOR TENTE DNV, Insira um número'))
+        }else{
+        tentativa= tentativa+1
+        number2 = Number(prompt('ERROU, É MENOR TENTE DNV, Insira um número'))
+        }
+    }alert('Acertou!!'); alert(`O número de tentativas foi: ${tentativa}`)
+    let again = confirm('Quer jogar dnv?')
+    if(again) desafio1()
+    else alert('Valeu!')
+
+}
+const desafio2 = () =>{
+    const number1 = Math.floor((Math.random()*100)+1)
+    console.log(number1)
+    let number2 = Number(prompt('Tente advinhar o número!'))
+    let tentativa  = 0
+    while(number1!==number2){
+        if(number1>number2){
+        tentativa = tentativa+1
+        number2 = Number(prompt(`Você inseriu ${number2} e errou, o numero é maior que isso`))
+        }else{
+        tentativa= tentativa+1
+        number2 = Number(prompt(`Você inseriu ${number2} e errou, o numero é menor que isso`))
+        }
+    }alert('Acertou!!'); alert(`O número de tentativas foi: ${tentativa}`)
+    let again = confirm('Quer jogar dnv?')
+    if(again) desafio2()
+    else alert('Valeu!')
+}
