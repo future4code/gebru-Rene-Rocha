@@ -43,8 +43,50 @@ const exercicio2 = () =>{
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
     ]
-
+    //A
     const produtosNome = produtos.map((item)=>{
         return item.nome
     })
+    //B
+    const arrayNovo = produtos.map((item)=>{
+        
+        return [item.nome, item.preco-(item.preco*0.05).toFixed()]
+    })
+    //C
+    const bebidas = produtos.filter((item)=>{
+        return item.categoria === 'Bebidas'
+    })
+    //D
+    const ype = produtos.filter((item)=>{
+        return item.nome.includes('Ypê')
+    })
+    //E 
+    const ypePreco = ype.map((item)=>{
+        return `Compre ${item.nome} por ${item.preco}`
+    })
+    console.log(ype)
+}
+//Desafio1.
+const desafio = () => {
+
+    const pokemons = [
+    { nome: "Bulbasaur", tipo: "grama" },
+    { nome: "Bellsprout", tipo: "grama" },
+    { nome: "Charmander", tipo: "fogo" },
+    { nome: "Vulpix", tipo: "fogo" },
+    { nome: "Squirtle", tipo: "água" },
+    { nome: "Psyduck", tipo: "água" },
+    ]
+
+    const nomes = pokemons.map((item)=>{
+        const ordemAlfabetica = item.nome
+        return ordemAlfabetica
+    })
+    //B
+    const tipos = pokemons.map((item)=>{
+        return item.tipo
+    })
+    const tirar = [...new Set(tipos)]
+    console.log(tirar)
+
 }
