@@ -63,7 +63,6 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
     let checar = (maiorNumero, num2) =>{
         return maiorNumero%num2===0
     }
-
     if(num1>num2){
         objeto.maiorNumero = num1
         objeto.maiorDivisivelPorMenor = checar(objeto.maiorNumero, num2)
@@ -90,6 +89,14 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
+    let arrayAlvo = []
+    for(let i = 0; i<=n; i++){
+    
+        
+
+    }
+    console.log(arrayAlvo)
+    return arrayAlvo
    
 }
 
