@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+.menu {
+    background-color: purple;
+    overflow:hidden;
+}
+
+.menu a {
+    float:left;
+    color:yellow;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+}
+.redeSocial{
+    margin: auto;
+    width: 5%;
+    padding: 18px;
+}
+.center{
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+IMG.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
