@@ -1,0 +1,82 @@
+/*  Multiplas condições */
+h1.texto{
+    color: blue;
+    border: 1px dotted black;
+
+}
+
+/*Seleção Muiltipla*/
+
+h1, h2, h3{
+    color: white;
+    background-color: orange;
+
+}
+
+/* Filhos(diretamente ligado, Só vai pintar de rosa o h1 que tiver a id condicoes)*/
+
+#condicoes > h1{
+    background-color: orchid;
+}
+
+/* Descendentes vai pintar todos os h1 dentro de section */
+
+section h1{
+    background-color: red;
+
+}
+/* Seletor Global */
+*{
+    margin:0px;
+    padding:0px;
+}
+/*Pseudo Classe :hover :active*/
+
+button:hover{
+    width: 200px;    
+    background-color:red ;
+    color: white
+}
+button:active{
+    background-color:rgb(255, 0, 140) ;
+    color: red
+}
+button{
+    width:200px;
+}
+/* Align*/
+img{
+    width: 150px;
+}
+.posicionar-esquerda{
+    text-align: left;
+}
+.posicionar-direita{
+    text-align: right;
+}
+.posicionar-centro{
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+  
+  }
+  
+  div {
+    padding: 5px;
+    position:relative;
+    top:50px;
+    left: 10px;
+ }
+  .rosa{
+    background-color: orchid;
+    position:sticky;
+    bottom:100px;
+}
+/*Position Sitkcy pro portifolio*/
+  
+
+
+
