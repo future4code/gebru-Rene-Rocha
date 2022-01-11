@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio reneW</title>
+        
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <main>
+    
+        <footer>
+            <div class="footer-content">
+                <h3>reneW dev</h3>
+                <p>Fullstack Dev and professional Filmmaker</p>
+                <ul class="socials">
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-256.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-512.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-512.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/github_social_media_logo-512.png"></a></li>
+    
+                </ul>
+                <p>Confira abaixo meus projetos e formações como FullStack DEV</p>
+
+            </div>
+    
+        </footer>
+            
+            <section class="aboutMe">
+                
+                
+
+            </section>
+        <section class="aboutMe">
+
+            
+        </section>
+        <!-- Projetos -->
+        <section class="aboutMe">
+            <div>
+            <img src="https://uploads-ssl.webflow.com/5e790d30d198385b09366d8f/5efbb5055f2478ba2bc322d0_icone_gif.gif">
+            
+            <br>
+            <b>Estudante Labenu</b>
+            <br>
+            <b>Frontend:</b><p>HTML5, CSS3, Javascript, React.</p>
+            <b>Backend:</b><p>Node.js, Typescript, MySQL, AWS e Firebase.</p>
+            <br>
+            <h3>Projetos:</h3>
+            <ul class="projects">
+               <a  onclick= "stopVideo()"><img src="img/blackjack.png"> <li><b >BlackJack</b></li></a>
+                <li></li>
+                <li></li>
+              </ul>
+            
+
+        
+        </div>
+        </section>
+          <section class="aboutMe">
+        </section>
+        <section class="aboutMe">
+            <div class ="footer-content">
+                <h3>ReneW Filmmaker</h3>
+                <p>Fullstack Dev and professional Filmmaker</p>
+                <ul class="socials">
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-256.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-512.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-512.png"></a></li>
+                    <li><a href="#"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/github_social_media_logo-512.png"></a></li>
+                </ul>
+                <p>Confira abaixo meus trabalhos como Filmmaker</p>
+            </div>        
+        </section>
+       <section class="aboutMe">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="img/play.png" class="play-btn" onclick="playVideo('img/nomeutalento.mp4')">
+                            <img src="img/nomeutalento.jpg" width="100%">
+                        </div>
+                    </div>
+                    <div class ="col">
+                        <div class="small-img-row">
+                            <div class ="small-img">
+                                <img src="img/dennisdelanotaina.jpg">
+                                <img src="img/play.png" class="play-btn" onclick="playVideo('img/paredao.mp4')">
+                            </div>
+                            <p>Dennis, Delano e Taina Costa - Na Frente do Paredão(Dir.Fotografia)</p>
+                            
+                        </div>
+                        <div class="small-img-row">
+                            <div class ="small-img">
+                                <img src="img/play.png" class="play-btn" onclick="playVideo('img/macetar.mp4')">
+                                <img src="img/macetar.jpg">
+                            </div>
+                            <p>Jon Ferraira - Macetar (Dir. reneW)</p>
+                            
+                        </div>
+                        <div class="small-img-row">
+                            <div class ="small-img">
+                                <img src="img/play.png" class="play-btn" onclick= "playVideo('img/dennisAfazenda.mp4')">
+                                <img src="img/dennisAfazenda.jpg">
+                            </div>
+                            <p>Corte exclusivo DENNIS A FAZENDA(DIR.RENEW)</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <!-- videoplayer -->
+            
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay>
+                <source id="myVideo" src="img/noMeuTalento.mp4" type="video/mp4">
+            </video>
+            <img src="img/close.png" class= "close-btn" onclick= "stopVideo()">
+        </div>
+        
+        <script defer>
+            
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+
+            function playVideo(file){
+                myVideo.src = file;
+                videoPlayer.style.display= "block";
+                window.scrollTo(0,0);
+            }
+            function stopVideo(){
+                videoPlayer.style.display = "none";
+                window.scrollTo(0,document.body.scrollHeight);
+            }
+
+        </script>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
