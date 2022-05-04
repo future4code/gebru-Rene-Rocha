@@ -33,10 +33,13 @@ function CharacterDetailsPage(props){
     return(
     <div>
         <h1>Detalhes de personagens</h1>
-        {details.name && planet.name ? 
+        {planet.name ? 
             <div>
-                <p>Nome:{details.name}  </p>
-                <p>Planeta de Origem: <button>{planet.name}</button></p>
+                <p>Nome:{planet.name}  </p>
+                <p>Clima:{planet.climate}  </p>
+                <p>Terreno:{planet.terrain}  </p>
+                <p>População:{planet.population}  </p>
+        
             </div>:
             <p>Carregando...</p> 
         
